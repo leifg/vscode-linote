@@ -5,7 +5,7 @@ const beginningOfFile = new vscode.Position(0, 0);
 
 const handle = (watchedFiles: string[]) => (event: vscode.TextDocumentWillSaveEvent) => {
 
-  const fileChanges = new Promise<vscode.TextEdit[]>((resolve, reject) => {
+  const fileChanges = new Promise<vscode.TextEdit[]>((resolve) => {
 
     if(!watchedFiles.includes(event.document.fileName)) {
       resolve([]);

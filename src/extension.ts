@@ -4,6 +4,7 @@ import * as vscode from 'vscode';
 import * as fileUtils from "./utils/fileUtils";
 import * as openFileCommand from "./commands/openFile";
 import * as newSnippetHandler from "./handlers/newSnippet";
+import * as parseFileHandler from "./handlers/parseFile";
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -25,6 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
   }
 
   const newSnippetHandlerSubscription = vscode.workspace.onWillSaveTextDocument(newSnippetHandler.handle([contentFile]));
+  const parseFileHandlerSubscription = vscode.workspace.onDidSaveTextDocument(parseFileHandler.handle([contentFile]));
 
   console.log('newSnippetHandlerSubscription', newSnippetHandlerSubscription);
 
@@ -35,6 +37,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(openFileSubscription);
   context.subscriptions.push(newSnippetHandlerSubscription);
+  context.subscriptions.push(parseFileHandlerSubscription);
 }
 
 // this method is called when your extension is deactivated
