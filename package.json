@@ -47,7 +47,8 @@
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "vscode:publish": "vsce package && vsce publish",
-    "compile": "tsc -p ./",
+    "compile:parser": "pegjs -o ./out/snippetParser.js ./grammars/snippets.pegjs",
+    "compile": "tsc -p ./ && yarn run compile:parser",
     "lint": "eslint src --ext ts",
     "watch": "tsc -watch -p ./",
     "pretest": "yarn run compile && yarn run lint",
