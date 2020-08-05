@@ -63,7 +63,7 @@
 		"@typescript-eslint/parser": "^3.8.0",
 		"eslint": "^7.6.0",
 		"glob": "^7.1.6",
-		"mocha": "^8.1.0",
+		"mocha": "^8.1.1",
 		"semantic-release": "^17.1.1",
 		"semantic-release-vsce": "^3.0.1",
 		"typescript": "^3.9.7",
