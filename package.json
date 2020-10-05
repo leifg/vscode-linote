@@ -71,6 +71,6 @@
 		"vscode-test": "^1.4.0"
 	},
 	"dependencies": {
-		"uuid": "^8.3.0"
+		"uuid": "^8.3.1"
 	}
 }
