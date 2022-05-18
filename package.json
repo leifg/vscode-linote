@@ -13,6 +13,7 @@
 		"url": "https://github.com/leifg/vscode-linote.git"
 	},
   "release": {
+    "branches": ["main"],
     "verifyConditions": [
       "semantic-release-vsce",
       "@semantic-release/github"
