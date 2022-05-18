@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       VSCE_PAT: ${{ secrets.VSCE_PAT }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
     steps:
       - uses: actions/checkout@v3
