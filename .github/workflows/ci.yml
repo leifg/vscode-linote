@@ -1,0 +1,35 @@
+name: VSCode Publishing
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and Release
+    runs-on: ubuntu-latest
+    env:
+      VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.15.0
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run Headless Tests
+        uses: GabrielBB/xvfb-action@v1.0
+        with:
+          run: yarn test
+
+      - name: Release
+        run: yarn semantic-release || true
