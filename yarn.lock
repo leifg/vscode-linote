@@ -1951,10 +1951,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.1.0.tgz#a5d06b4a8b01e3a63771daa5cb7a1903e2e57067"
   integrity sha512-tW+UkmtNg/jv9CSofAKvgVcO7c2URjhTdW1ZTkcAritblu8tajiYy7YisnIflEwtKssCtOxpnBRoCB7iap0/TA==
 
-follow-redirects@^1.13.2:
-  version "1.14.8"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.8.tgz#016996fb9a11a100566398b1c6839337d7bfa8fc"
-  integrity sha512-1x0S9UVJHsQprFcEC/qnNzBLcIxsjAV905f/UkQxbclCsoTWlacCNOpQa/anodLl2uaEKFhfWOvM2Qg77+15zA==
+follow-redirects@^1.14.6:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
+  integrity sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==
 
 forever-agent@~0.6.1:
   version "0.6.1"
@@ -3710,13 +3710,13 @@ os-name@^3.1.0:
     macos-release "^2.2.0"
     windows-release "^3.1.0"
 
-ovsx@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/ovsx/-/ovsx-0.3.0.tgz#2f30c80c90fbe3c8fc406730c35371219187ca0a"
-  integrity sha512-UjZjzLt6Iq7LS/XFvEuBAWyn0zmsZEe8fuy5DsbcsIb0mW7PbVtB5Dhe4HeK7NJM228nyhYXC9WCeyBoMi4M3A==
+ovsx@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/ovsx/-/ovsx-0.5.0.tgz#0151c68515a3a402efced4be654679397be05b7f"
+  integrity sha512-eZ+4yaZsjacV1h/y1IaP+DI8AL84vIjUQCWMtNQzV+O2f9bg2FSOKe8/4WXSUS8trgXMqf1ACDllKWTULaUkhQ==
   dependencies:
     commander "^6.1.0"
-    follow-redirects "^1.13.2"
+    follow-redirects "^1.14.6"
     is-ci "^2.0.0"
     leven "^3.1.0"
     tmp "^0.2.1"
@@ -4330,15 +4330,15 @@ sax@>=0.6.0:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release-vsce@^5.0.13:
-  version "5.0.13"
-  resolved "https://registry.yarnpkg.com/semantic-release-vsce/-/semantic-release-vsce-5.0.13.tgz#488b3b712bb452b4187dd9dc7b835b3c6d9e94c8"
-  integrity sha512-GtHGnkLrn8jLbl6pUZS3rQSVTpEFXw/uMG52FU7m/ePH5tweopxqxETFQ2n8rNmKuywrsKcsAh9rQF+qGZSXww==
+semantic-release-vsce@^5.0.14:
+  version "5.0.14"
+  resolved "https://registry.yarnpkg.com/semantic-release-vsce/-/semantic-release-vsce-5.0.14.tgz#342f13076403cc98d7a5f3df7c98ebe62b7169ed"
+  integrity sha512-NpqWrG36rvOP8fR/Z7pcZeMClBZ3cjrOb6Ua/nuNXmFrc095jg5oESLzUkrncjBENsuLGTUGY1on+C1CX9BWnQ==
   dependencies:
     "@semantic-release/error" "^3.0.0"
     execa "^5.0.0"
     fs-extra "^10.0.0"
-    ovsx "^0.3.0"
+    ovsx "^0.5.0"
     vsce "^2.6.3"
 
 semantic-release@^19.0.2:
