@@ -526,10 +526,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
   integrity sha1-aaI6OtKcrwCX8G7aWbNh7i8GOfY=
 
-"@types/mocha@^10.0.4":
-  version "10.0.4"
-  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.4.tgz#b5331955ebca216604691fd4fcd2dbdc2bd559a4"
-  integrity sha512-xKU7bUjiFTIttpWaIZ9qvgg+22O1nmbA+HRxdlR+u6TWsGfmFdXrheJoK4fFxrHNVIOBDvDNKZG+LYBpMHpX3w==
+"@types/mocha@^10.0.5":
+  version "10.0.5"
+  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.5.tgz#43c22b06b7616496e4b75b28d9c72aa06b5d96fd"
+  integrity sha512-JUI82qwkRhYJYesuKSeFy46fKbhLaV9RU1gAh2PHmyoEECvlTf5UYeIivYlMszp1WT2CwJ4ziC3zoxsodhsGwg==
 
 "@types/node@*", "@types/node@>= 8", "@types/node@^20.9.2":
   version "20.9.2"
